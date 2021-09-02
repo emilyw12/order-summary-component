@@ -1,0 +1,132 @@
+
+/* ============
+ Global styles
+==============*/
+
+body {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "Red Hat Display", sans-serif;
+	background: url("images/pattern-background-mobile.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* =================
+ Overall card styles
+====================*/
+
+.card {
+	width: 90%;
+	max-width: 90%;
+	height: 35em;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	border-radius: 20px;
+	box-shadow: 0px 0px 40px hsl(224, 23%, 55%);
+}
+
+/* =================
+ Card hero image
+==================== */
+.card__img-container {
+	height: 30%;
+	background-image: url("images/illustration-hero.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* =================
+ Order Summary
+==================== */
+
+.card__order-summary {
+	text-align: center;
+	line-height: 150%;
+	padding: 2em 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card__paragraph, .card__plan-price {
+	color: hsl(224, 23%, 55%);
+}
+
+.card__heading {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.card__paragraph {
+	width: 90%;
+}
+
+/* =================
+ Card plan
+==================== */
+
+.card__plan {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	box-sizing: border-box;
+	align-items: center;
+	background-color: hsl(225, 100%, 98%);
+	text-align: left;
+	padding: 1em;
+	gap: 1em;
+	border-radius: 10px;
+}
+
+.card__plan-description {
+	flex-grow: 2;
+}
+
+.card__plan-type, .card__plan-price {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.card__plan-type, .card__change-link {
+	font-weight: 700;
+}
+
+/* =====================
+ Card button and cancel
+========================*/
+
+.card__payment-btn {
+	background-color: hsl(245, 75%, 52%);
+	display: block;
+	font-weight: 700;
+	width: 100%;
+	padding: .9em;
+	border: none;
+	color: #FFFFFF;
+	font-family: inherit;
+	font-size: inherit;
+	border-radius: 10px;
+	margin: 1.25em 0;
+	box-shadow: 0px 4px 10px hsl(245, 75%, 52%);
+}
+
+.card__cancel-link {
+	text-decoration: none;
+	font-weight: 700;
+	color: hsl(224, 23%, 55%);
+}
+
+/* ============
+ Desktop view
+==============*/
+@media screen and (min-width: 420px) {
+
+}
+
